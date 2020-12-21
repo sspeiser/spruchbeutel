@@ -1,0 +1,16 @@
+/ Escape HTML!
+
+export const config: { [string: string]: any } = {
+    title: "Random Quotes",
+    headline: "Ask the Spruchbeutel for some quotes",
+    impressum: "Impressum: created with Spruchbeutel",
+    backlink: "Zur&uuml;ck",
+    showalllink: "Zeige alle Spr&uuml;che"
+    initialquote: "Klicke auf den Beutel, um einen Spruch zu erhalten."
+}
+
+export const quotes: string[] = [
+    "This quote is quite boring",
+    "This quote is really boring",
+    "This quote is the most boring one
+]
