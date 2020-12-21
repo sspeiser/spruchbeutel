@@ -23,10 +23,12 @@ jobs:
     - run: npm ci
     - run: cp src/config.ts.example src/config.ts 
     - run: npm run build
+    - run: mkdir -p public/spruchbeutel
+    - run: mv build/* public/spruchbeutel/
     - name: GitHub Pages Deploy
-      uses: appleboy/gh-pages-action@v0.0.2
+      uses: crazy-max/ghaction-github-pages@v2
       with:
-        # directory of content to publish
-        pages_directory: dist 
-        # directory of content to sync
-        target_directory: spruchtbeutel
+        target_branch: gh-pages
+        build_dir: public
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
