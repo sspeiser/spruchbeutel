@@ -1,0 +1,45 @@
+<html>
+
+<head>
+    <title>Loading ...</title>
+    <link rel="stylesheet" href="../node_modules/mini.css/dist/mini-default.min.css">
+    <style>
+        .rotate {
+            animation: rotate 0.5s infinite linear;
+        }
+
+        @keyframes rotate {
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+        .invisible {
+            visibility: hidden;
+        }
+    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body style="text-align: center;  width: 80%; margin: 5vmin">
+    <h2 id="headline">Loading ...</h2>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-2">
+                <!-- https://openclipart.org/detail/210198/misc-bag-generic -->
+                <img id="bagimg" src="misc-bag-generic.svg" style="max-width: 100px; width: 15vw; height: 15vw">
+            </div>
+            <div class="col-sm">
+                <div style="max-width: 540px" class="card fluid" id="quote"><span id="initialquote">Click on bag for next quote</span></div>
+            </div>
+        </div>
+    </div>    
+    <br />
+    <footer>
+        <a href="all.html" id="showalllink">Show all</a><br />
+        <span id="impressum">d</span>
+    </footer>
+    <script src="index.ts"></script>
+</body>
+
+</html>
