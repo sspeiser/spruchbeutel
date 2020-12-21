@@ -7,3 +7,9 @@ Also has a mode for displaying all quotes.
 Just add a src/config.ts with your custom labels and quotes (see src/config.ts.example), run npm run build and copy the contents of "dist" into the folder "spruchbeutel/" of your server. You can change the folder name in package.json "build" script.
 
 Have fun.
+
+# Demo
+
+https://sspeiser.github.io/spruchbeutel/
+
+Quotes are quite lame ... purpose of this project is to create something personal as a gift.
