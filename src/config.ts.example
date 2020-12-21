@@ -1,4 +1,4 @@
-/ Escape HTML!
+// Escape HTML!
 
 export const config: { [string: string]: any } = {
     title: "Random Quotes",
