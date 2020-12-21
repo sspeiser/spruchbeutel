@@ -22,7 +22,7 @@ jobs:
         node-version: ${{ matrix.node-version }}
     - run: npm ci
     - run: cp src/config.ts.example src/config.ts 
-    - run: npm run build --if-present
+    - run: npm run build
     - name: GitHub Pages Deploy
       uses: appleboy/gh-pages-action@v0.0.2
       with:
