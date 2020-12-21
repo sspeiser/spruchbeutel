@@ -12,5 +12,5 @@ export const config: { [string: string]: any } = {
 export const quotes: string[] = [
     "This quote is quite boring",
     "This quote is really boring",
-    "This quote is the most boring one
+    "This quote is the most boring one"
 ]
